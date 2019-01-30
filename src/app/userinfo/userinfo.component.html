@@ -1,0 +1,16 @@
+<br>
+<br>
+<div class="container" id="users">
+  <div class="card-group d-flex" style="text-align: center;">
+    <div *ngIf="users.length>0">
+      <div *ngFor="let user of users">
+        <img src="https://image.freepik.com/free-icon/user-image-with-black-background_318-34564.jpg" class="img-responsive" alt="map" width="10%" height="8%" /> 
+        
+        <br />
+        <a style="text-align:center;" [routerLink]="['/user',user.user_name]" class="btn btn-primary">{{user.first_name}}</a>
+        <br />
+      </div>
+       
+        </div>
+      </div>
+    </div>
